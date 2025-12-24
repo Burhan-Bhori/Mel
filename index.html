@@ -19,6 +19,20 @@
     <!-- Minimal scroll progress indicator -->
     <div class="scroll-progress" aria-hidden="true"></div>
 
+    <!-- Sticky Navigation -->
+    <nav class="sticky-nav" aria-label="Main navigation">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">Melissa Disla</a>
+            <ul class="nav-links">
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#speaking">Speaking</a></li>
+                <li><a href="#contact" class="nav-cta">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="container">
@@ -31,23 +45,23 @@
                 responsibility.
             </p>
             <div class="hero-cta fade-in-3">
-                <a href="#contact" class="btn btn-primary">Begin with clarity</a>
-                <a href="#work" class="btn btn-secondary">Explore the work</a>
+                <a href="#contact" class="btn btn-primary btn-large">Begin with clarity</a>
+                <a href="#work" class="btn btn-secondary btn-large">Explore the work</a>
             </div>
 
-            <!-- Photo Placeholder -->
+            <!-- Professional Photo -->
             <div class="photo-placeholder fade-in-4">
-                <!-- 
-                    REPLACE THIS PLACEHOLDER:
-                    1. Save Melissa Disla's LinkedIn profile photo
-                    2. Name it "melissa-disla.jpg" (or .png)
-                    3. Place it in the same folder as this HTML file
-                    4. Replace the div below with:
-                       <img src="melissa-disla.jpg" alt="Melissa Disla, Confidence Coach and Leadership Developer">
-                -->
-                <div class="placeholder-circle">
-                    <span class="placeholder-text">Replace with Melissa Disla's<br>LinkedIn profile photo</span>
-                </div>
+                <img src="melissa-disla.jpg" alt="Melissa Disla, Confidence Coach and Leadership Developer"
+                    class="hero-photo">
+            </div>
+
+            <!-- Scroll Indicator -->
+            <div class="scroll-indicator fade-in-4" aria-hidden="true">
+                <span>Scroll to explore</span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 5V19M12 19L6 13M12 19L18 13" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
             </div>
         </div>
     </section>
@@ -211,45 +225,54 @@
     </section>
 
     <!-- Section 7: Proof Without Noise (Testimonials) -->
-    <section class="testimonials">
+    <section class="testimonials" id="testimonials">
         <div class="container">
             <h2 class="section-title centered">What people say</h2>
 
             <div class="testimonial-grid">
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <span class="avatar-initials">CG</span>
+                    </div>
                     <p class="testimonial-text">
                         "Melissa has a unique ability to connect with others in a way that makes them feel genuinely
                         seen and heard. When Melissa speaks, people want to listen; when she teaches, people want to
                         learn."
                     </p>
-                    <p class="testimonial-attribution">
+                    <div class="testimonial-attribution">
                         <strong>Cindy Guirgis</strong><br>
                         VP of Global People & Culture
-                    </p>
+                    </div>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <span class="avatar-initials">SD</span>
+                    </div>
                     <p class="testimonial-text">
                         "Melissa is a gifted communicator, trusted advisor, and natural coach. She proved to be an
                         exceptional mentor and leadership coach, helping junior managers grow as leaders, gain
                         confidence, and perform at higher levels."
                     </p>
-                    <p class="testimonial-attribution">
+                    <div class="testimonial-attribution">
                         <strong>Steven Dracker</strong><br>
                         VP of Infrastructure and Security Operations
-                    </p>
+                    </div>
                 </div>
 
-                <div class="testimonial">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <span class="avatar-initials">CM</span>
+                    </div>
                     <p class="testimonial-text">
                         "Melissa is one of the most intelligent, empathetic and skilled L&D professionals I've come
                         across. She consistently worked across specialties with real impact, always someone folks could
                         come to with challenges and have them addressed thoughtfully."
                     </p>
-                    <p class="testimonial-attribution">
+                    <div class="testimonial-attribution">
                         <strong>Chris Malito</strong><br>
                         Account Based Marketing Leader
-                    </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -281,35 +304,92 @@
         </div>
     </section>
 
-    <!-- Section 9: The Invitation (Contact) -->
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title centered">Common questions</h2>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">How does coaching work?</h3>
+                    <p class="faq-answer">We begin with clarity: a conversation about where you are, where you want to
+                        be, and what's in the way. From there, we design a structure that fits your schedule and
+                        needs—typically 60-minute sessions, bi-weekly or monthly. This isn't therapy. It's practical,
+                        psychology-informed work on presence, self-trust, and leadership embodiment.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">What's the time commitment?</h3>
+                    <p class="faq-answer">Most clients work together for 3-6 months, though some engagements are shorter
+                        (leadership transition support) or longer (ongoing executive coaching). Sessions are scheduled
+                        around your calendar. The work happens both in sessions and in the moments you apply what we
+                        discuss.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you work with teams or just individuals?</h3>
+                    <p class="faq-answer">Both. Individual coaching focuses on personal leadership and confidence. For
+                        teams and organizations, I design learning programs, facilitate leadership development
+                        workshops, and build L&D strategies that scale. The approach stays the same: grounded,
+                        practical, human.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3 class="faq-question">How do we start?</h3>
+                    <p class="faq-answer">Reach out below. We'll have an initial conversation—no pressure, no pitch. If
+                        it feels like a fit, we move forward. If not, I'll point you toward resources or people who
+                        might serve you better. Clarity first, always.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 9: The Invitation (Contact) - Enhanced as Landing Moment -->
     <section class="invitation" id="contact">
         <div class="container">
             <div class="invitation-content">
-                <h2 class="invitation-title">If this resonates, we can talk.</h2>
+                <p class="invitation-prelude">You've read this far. Something resonated.</p>
+                <h2 class="invitation-title">If this feels right,<br>we can talk.</h2>
                 <p class="invitation-text">
-                    Not a pitch. Not pressure. A conversation grounded in clarity.
+                    Not a pitch. Not pressure.<br>
+                    A conversation grounded in clarity.
                 </p>
                 <div class="invitation-cta">
-                    <a href="mailto:hello@melissadisla.com" class="btn btn-primary">Start the conversation</a>
+                    <a href="mailto:hello@melissadisla.com" class="btn btn-primary btn-large">Start the conversation</a>
                 </div>
                 <p class="closure-line">This conversation begins when you're ready.</p>
             </div>
         </div>
     </section>
 
-    <!-- Minimal JavaScript for staged reveal and scroll progress -->
+    <!-- Enhanced JavaScript for staged reveal, sticky nav, and scroll progress -->
     <script>
         // Staged entry reveal
         document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('loaded');
         });
 
-        // Scroll progress indicator
+        // Sticky navigation visibility on scroll
+        const stickyNav = document.querySelector('.sticky-nav');
+        let lastScroll = 0;
+
         window.addEventListener('scroll', function () {
+            const currentScroll = window.scrollY;
+
+            // Show sticky nav after scrolling down 200px
+            if (currentScroll > 200) {
+                stickyNav.classList.add('visible');
+            } else {
+                stickyNav.classList.remove('visible');
+            }
+
+            // Scroll progress indicator
             const scrollProgress = document.querySelector('.scroll-progress');
             const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-            const scrolled = (window.scrollY / scrollHeight) * 100;
+            const scrolled = (currentScroll / scrollHeight) * 100;
             scrollProgress.style.width = scrolled + '%';
+
+            lastScroll = currentScroll;
         });
 
         // Smooth scroll for navigation
