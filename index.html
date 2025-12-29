@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="Melissa Disla - Confidence Coach, Leadership Developer, and L&D Strategist. Helping leaders restore self-trust and embody grounded presence.">
+
+    <!-- SEO & Social Meta Tags -->
+    <meta name="keywords"
+        content="confidence coach, leadership development, executive coaching, L&D strategy, keynote speaker">
+    <meta name="author" content="Melissa Disla">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Melissa Disla | Confidence Coach & Leadership Developer">
+    <meta property="og:description"
+        content="Helping executives and leaders develop grounded presence and sustainable confidence.">
+    <meta property="og:image" content="melissa-disla.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Favicon (SVG) -->
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+
     <title>Melissa Disla | Confidence Coach & Leadership Developer</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +32,25 @@
 </head>
 
 <body>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-to-content">Skip to main content</a>
+
     <!-- Minimal scroll progress indicator -->
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <!-- Sticky Navigation -->
+    <!-- Sticky Navigation with Mobile Menu -->
     <nav class="sticky-nav" aria-label="Main navigation">
         <div class="nav-container">
             <a href="#home" class="nav-brand">Melissa Disla</a>
+
+            <!-- Mobile Menu Toggle -->
+            <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <!-- Navigation Links -->
             <ul class="nav-links">
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#work">Work</a></li>
@@ -40,19 +68,21 @@
                 Confidence isn't something you find.<br>
                 It's something you return to.
             </h1>
-            <p class="hero-supporting fade-in-2">
+
+            <!-- Professional Photo - Positioned for immediate trust building -->
+            <div class="photo-placeholder fade-in-2">
+                <img src="melissa-disla.jpg"
+                    alt="Professional headshot of Melissa Disla, an approachable confidence coach and leadership developer"
+                    class="hero-photo">
+            </div>
+
+            <p class="hero-supporting fade-in-3">
                 Leadership development, confidence coaching, and organizational clarity for people who carry real
                 responsibility.
             </p>
-            <div class="hero-cta fade-in-3">
+            <div class="hero-cta fade-in-4">
                 <a href="#contact" class="btn btn-primary btn-large">Begin with clarity</a>
                 <a href="#work" class="btn btn-secondary btn-large">Explore the work</a>
-            </div>
-
-            <!-- Professional Photo -->
-            <div class="photo-placeholder fade-in-4">
-                <img src="melissa-disla.jpg" alt="Melissa Disla, Confidence Coach and Leadership Developer"
-                    class="hero-photo">
             </div>
 
             <!-- Scroll Indicator -->
@@ -125,26 +155,79 @@
         </div>
     </section>
 
+    <!-- Trust Badges Section -->
+    <section class="trust-badges">
+        <div class="container">
+            <div class="badges-grid">
+                <div class="badge-item">
+                    <div class="badge-number" data-target="20">0</div>
+                    <div class="badge-label">Years Experience</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-number" data-target="500">0</div>
+                    <div class="badge-label">Leaders Coached</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-number" data-target="50">0</div>
+                    <div class="badge-label">Organizations</div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-number" data-target="100">0</div>
+                    <div class="badge-label">Focused on You</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Section 4: Values Contrast - What This Is NOT -->
-    <section class="values-contrast">
+    <section class="values-contrast" id="values">
         <div class="container">
             <div class="contrast-content">
                 <h2 class="section-title">What this work is not</h2>
-                <p class="contrast-text">
-                    This is not hype. It's not performative confidence or borrowed charisma. It's not about faking it
-                    until you make it, adopting a power pose, or rehearsing elevator pitches until they sound smooth but
-                    hollow.
-                </p>
-                <p class="contrast-text">
-                    It's not loud leadership. It's not about dominating rooms or projecting authority you don't feel.
-                    It's not quick fixes, three-step frameworks, or motivational momentum that fades by Monday.
-                </p>
-                <p class="contrast-text">
+                <div class="contrast-grid">
+                    <div class="contrast-item contrast-not">
+                        <svg class="contrast-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <p>This is not hype. It's not performative confidence or borrowed charisma.</p>
+                    </div>
+                    <div class="contrast-item contrast-not">
+                        <svg class="contrast-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <p>It's not about faking it until you make it.</p>
+                    </div>
+                    <div class="contrast-item contrast-not">
+                        <svg class="contrast-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <p>It's not motivational momentum that fades by Monday.</p>
+                    </div>
+                    <div class="contrast-item contrast-not">
+                        <svg class="contrast-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 8L16 16M16 8L8 16" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                        </svg>
+                        <p>It's not therapy, and it's not a quick fix.</p>
+                    </div>
+                </div>
+                <p class=\"contrast-text\" style=\"margin-top: var(--space-6);\">
                     This work is quiet, internal, and structural. It's about restoring the connection between what you
                     know and how you show up. It's about presence, not performance. Clarity, not charisma. Groundedness,
                     not volume.
                 </p>
-                <p class="contrast-text">
+                <p class=\"contrast-text\">
                     If you're looking for tactics without depth, this isn't it. But if you're ready to stop performing
                     and start returning—this is exactly where that begins.
                 </p>
@@ -192,6 +275,13 @@
 
             <div class="pathways">
                 <div class="pathway-card">
+                    <div class="pathway-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="16" cy="12" r="5" stroke="currentColor" stroke-width="2" />
+                            <path d="M8 26C8 21 11.5 18 16 18C20.5 18 24 21 24 26" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                    </div>
                     <h3 class="pathway-title">For Individuals</h3>
                     <p class="pathway-subtitle">Confidence Coaching</p>
                     <p class="pathway-description">
@@ -202,6 +292,16 @@
                 </div>
 
                 <div class="pathway-card">
+                    <div class="pathway-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M8 16L14 10L18 14L24 8" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="8" cy="16" r="2" fill="currentColor" />
+                            <circle cx="14" cy="10" r="2" fill="currentColor" />
+                            <circle cx="18" cy="14" r="2" fill="currentColor" />
+                            <circle cx="24" cy="8" r="2" fill="currentColor" />
+                        </svg>
+                    </div>
                     <h3 class="pathway-title">For Leaders</h3>
                     <p class="pathway-subtitle">Leadership Development</p>
                     <p class="pathway-description">
@@ -212,6 +312,15 @@
                 </div>
 
                 <div class="pathway-card">
+                    <div class="pathway-icon" aria-hidden="true">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect x="4" y="8" width="24" height="16" rx="2" stroke="currentColor" stroke-width="2" />
+                            <path d="M4 14H28" stroke="currentColor" stroke-width="2" />
+                            <circle cx="10" cy="11" r="1.5" fill="currentColor" />
+                            <circle cx="16" cy="11" r="1.5" fill="currentColor" />
+                            <circle cx="22" cy="11" r="1.5" fill="currentColor" />
+                        </svg>
+                    </div>
                     <h3 class="pathway-title">For Organizations</h3>
                     <p class="pathway-subtitle">Learning & Development Strategy</p>
                     <p class="pathway-description">
@@ -231,7 +340,7 @@
 
             <div class="testimonial-grid">
                 <div class="testimonial-card">
-                    <div class="testimonial-avatar">
+                    <div class="testimonial-avatar avatar-gradient-1">
                         <span class="avatar-initials">CG</span>
                     </div>
                     <p class="testimonial-text">
@@ -246,7 +355,7 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-avatar">
+                    <div class="testimonial-avatar avatar-gradient-2">
                         <span class="avatar-initials">SD</span>
                     </div>
                     <p class="testimonial-text">
@@ -261,7 +370,7 @@
                 </div>
 
                 <div class="testimonial-card">
-                    <div class="testimonial-avatar">
+                    <div class="testimonial-avatar avatar-gradient-3">
                         <span class="avatar-initials">CM</span>
                     </div>
                     <p class="testimonial-text">
@@ -311,34 +420,81 @@
 
             <div class="faq-grid">
                 <div class="faq-item">
-                    <h3 class="faq-question">How does coaching work?</h3>
-                    <p class="faq-answer">We begin with clarity: a conversation about where you are, where you want to
-                        be, and what's in the way. From there, we design a structure that fits your schedule and
-                        needs—typically 60-minute sessions, bi-weekly or monthly. This isn't therapy. It's practical,
-                        psychology-informed work on presence, self-trust, and leadership embodiment.</p>
+                    <button class="faq-question" aria-expanded="false">
+                        How does coaching work?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We begin with clarity: a conversation about where you are, where you want to be, and what's
+                            in the way. From there, we design a structure that fits your schedule and needs—typically
+                            60-minute sessions, bi-weekly or monthly. This isn't therapy. It's practical,
+                            psychology-informed work on presence, self-trust, and leadership embodiment.</p>
+                    </div>
                 </div>
 
                 <div class="faq-item">
-                    <h3 class="faq-question">What's the time commitment?</h3>
-                    <p class="faq-answer">Most clients work together for 3-6 months, though some engagements are shorter
-                        (leadership transition support) or longer (ongoing executive coaching). Sessions are scheduled
-                        around your calendar. The work happens both in sessions and in the moments you apply what we
-                        discuss.</p>
+                    <button class="faq-question" aria-expanded="false">
+                        What's the time commitment?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Most clients work together for 3-6 months, though some engagements are shorter (leadership
+                            transition support) or longer (ongoing executive coaching). Sessions are scheduled around
+                            your calendar. The work happens both in sessions and in the moments you apply what we
+                            discuss.</p>
+                    </div>
                 </div>
 
                 <div class="faq-item">
-                    <h3 class="faq-question">Do you work with teams or just individuals?</h3>
-                    <p class="faq-answer">Both. Individual coaching focuses on personal leadership and confidence. For
-                        teams and organizations, I design learning programs, facilitate leadership development
-                        workshops, and build L&D strategies that scale. The approach stays the same: grounded,
-                        practical, human.</p>
+                    <button class="faq-question" aria-expanded="false">
+                        Do you work with teams or just individuals?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Both. Individual coaching focuses on personal leadership and confidence. For teams and
+                            organizations, I design learning programs, facilitate leadership development workshops, and
+                            build L&D strategies that scale. The approach stays the same: grounded, practical, human.
+                        </p>
+                    </div>
                 </div>
 
                 <div class="faq-item">
-                    <h3 class="faq-question">How do we start?</h3>
-                    <p class="faq-answer">Reach out below. We'll have an initial conversation—no pressure, no pitch. If
-                        it feels like a fit, we move forward. If not, I'll point you toward resources or people who
-                        might serve you better. Clarity first, always.</p>
+                    <button class="faq-question" aria-expanded="false">
+                        How do we start?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Reach out below. We'll have an initial conversation—no pressure, no pitch. If it feels like a
+                            fit, we move forward. If not, I'll point you toward resources or people who might serve you
+                            better. Clarity first, always.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        What makes your approach different?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>I don't teach confidence as performance or personality. This isn't about "faking it" or
+                            borrowing someone else's presence. It's grounded in psychology, built on two decades of
+                            organizational experience, and designed for leaders who think critically about how they show
+                            up. The work is internal, structural, and sustainable—not motivational momentum that fades
+                            by Monday.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        Do you offer virtual or in-person sessions?
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Both. Most coaching happens virtually via video call, which allows for flexible scheduling
+                            and eliminates geography as a barrier. For organizational work (workshops, leadership
+                            development programs, keynotes), I work both virtually and in-person depending on your
+                            team's needs and preferences.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -362,8 +518,155 @@
         </div>
     </section>
 
-    <!-- Enhanced JavaScript for staged reveal, sticky nav, and scroll progress -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-text">© 2025 Melissa Disla. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/melissa-disla-512241100/" target="_blank"
+                        rel="noopener noreferrer" class="footer-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                            <path
+                                d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z" />
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+        ↑
+    </button>
+
+    <!-- Contact Modal -->
+    <div id="contactModal" class="modal-overlay" aria-hidden="true">
+        <div class="modal-container">
+            <button class="close-modal" aria-label="Close modal">×</button>
+            <h3 class="modal-title">Start the conversation</h3>
+            <p class="modal-text">Ready to return to confidence? Send a message directly or copy the email address
+                below.</p>
+
+            <div class="email-box">
+                <span class="email-address">hello@melissadisla.com</span>
+                <button class="copy-email-btn">Copy</button>
+            </div>
+
+            <a href="mailto:hello@melissadisla.com" class="btn btn-primary btn-full-width">Open in Email App</a>
+
+            <p class="modal-note">I typically respond within 48 hours.</p>
+        </div>
+    </div>
+
+    <!-- Enhanced JavaScript for staged reveal, sticky nav, scroll progress, mobile menu, and FAQ accordion -->
+
+
     <script>
+        // Count-up Animation Logic
+        function animateValue(obj, start, end, duration, suffix = '+') {
+            let startTimestamp = null;
+            const step = (timestamp) => {
+                if (!startTimestamp) startTimestamp = timestamp;
+                const progress = Math.min((timestamp - startTimestamp) / duration, 1);
+                obj.innerHTML = Math.floor(progress * (end - start) + start) + suffix;
+                if (progress < 1) {
+                    window.requestAnimationFrame(step);
+                } else {
+                    // Check for 100% case
+                    if (end === 100) obj.innerHTML = end + '%';
+                }
+            };
+            window.requestAnimationFrame(step);
+        }
+
+        const observerOptions = { threshold: 0.5 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const target = parseInt(entry.target.getAttribute('data-target'));
+                    // Use wider threshold for 100
+                    const suffix = target === 100 ? '%' : '+';
+                    animateValue(entry.target, 0, target, 2000, suffix);
+                    // Stop observing once started
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.badge-number').forEach(el => observer.observe(el));
+
+        // Back to Top Button Logic
+        const topBtn = document.getElementById('backToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 500) {
+                topBtn.classList.add('visible');
+            } else {
+                topBtn.classList.remove('visible');
+            }
+        });
+
+        if (topBtn) {
+            topBtn.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        }
+
+        // Contact Modal Logic
+        const modal = document.getElementById('contactModal');
+        const contactLinks = document.querySelectorAll('a[href="#contact"], .nav-cta, .btn-primary[href="#contact"]');
+        const closeModal = document.querySelector('.close-modal');
+        const copyBtn = document.querySelector('.copy-email-btn');
+
+        // Override default anchor behavior for contact links
+        contactLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        function hideModal() {
+            modal.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        if (closeModal) closeModal.addEventListener('click', hideModal);
+
+        // Close on outside click
+        if (modal) {
+            modal.addEventListener('click', (e) => {
+                if (e.target === modal) hideModal();
+            });
+        }
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal && modal.classList.contains('active')) hideModal();
+        });
+
+        // Copy Email Functionality
+        if (copyBtn) {
+            copyBtn.addEventListener('click', () => {
+                navigator.clipboard.writeText('hello@melissadisla.com').then(() => {
+                    const originalText = copyBtn.innerHTML;
+                    copyBtn.innerHTML = 'Copied! ✓';
+                    copyBtn.style.backgroundColor = 'var(--color-sage)';
+                    copyBtn.style.color = 'var(--color-ivory)';
+
+                    setTimeout(() => {
+                        copyBtn.innerHTML = originalText;
+                        copyBtn.style.backgroundColor = '';
+                        copyBtn.style.color = '';
+                    }, 2000);
+                });
+            });
+        }
+
         // Staged entry reveal
         document.addEventListener('DOMContentLoaded', function () {
             document.body.classList.add('loaded');
@@ -411,6 +714,59 @@
         if (prefersReducedMotion) {
             document.body.classList.add('reduce-motion');
         }
+
+        // Mobile menu toggle
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        if (mobileMenuToggle) {
+            mobileMenuToggle.addEventListener('click', function () {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                this.setAttribute('aria-expanded', !isExpanded);
+                navLinks.classList.toggle('active');
+                document.body.classList.toggle('menu-open');
+            });
+
+            // Close mobile menu when clicking on a link
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileMenuToggle.setAttribute('aria-expanded', 'false');
+                    navLinks.classList.remove('active');
+                    document.body.classList.remove('menu-open');
+                });
+            });
+        }
+
+        // FAQ Accordion functionality
+        const faqQuestions = document.querySelectorAll('.faq-question');
+
+        faqQuestions.forEach(question => {
+            question.addEventListener('click', function () {
+                const isExpanded = this.getAttribute('aria-expanded') === 'true';
+                const answer = this.nextElementSibling;
+                const icon = this.querySelector('.faq-icon');
+
+                // Close all other FAQs (optional - remove to allow multiple open)
+                faqQuestions.forEach(q => {
+                    if (q !== question) {
+                        q.setAttribute('aria-expanded', 'false');
+                        q.nextElementSibling.style.maxHeight = null;
+                        q.querySelector('.faq-icon').textContent = '+';
+                    }
+                });
+
+                // Toggle current FAQ
+                this.setAttribute('aria-expanded', !isExpanded);
+
+                if (!isExpanded) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.textContent = '−';
+                } else {
+                    answer.style.maxHeight = null;
+                    icon.textContent = '+';
+                }
+            });
+        });
     </script>
 </body>
 
